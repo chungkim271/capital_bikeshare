@@ -202,7 +202,7 @@ df.groupby(['year', 'month']).size().rename('trips').to_frame()
 
 
 
-![png](output_7_2.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_7_2.png)
 
 
 More rides during warmer months
@@ -608,7 +608,7 @@ ax.set(ylabel="Percent")
 
 
 
-![png](output_19_1.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_19_1.png)
 
 
 > \>80% of the trips are taken by members
@@ -628,7 +628,7 @@ sns.barplot(x='member_type', y='duration_m', data=df)
 
 
 
-![png](output_22_1.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_22_1.png)
 
 
 > The average trip duration in minute shows that casual riders have much longer trips than members, 40 mins vs 15 mins
@@ -658,7 +658,7 @@ sns.countplot(x='duration_m_cat', data=df.query('member_type=="Casual"'), ax=ax[
 
 
 
-![png](output_25_1.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_25_1.png)
 
 
 > A considerable share of casual trips are over 1 hour, indicating either casual riders are not price sensitive or don't understand the incremental pricing scheme
@@ -684,7 +684,7 @@ sns.countplot(x='hour', data=df.query('member_type=="Casual"'), ax=ax[1])
 
 
 
-![png](output_28_1.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_28_1.png)
 
 
 > Member usage peak during commute times while casual usage is normally distributed during the day
@@ -706,7 +706,7 @@ sns.countplot(x='month', data=df.query('member_type=="Casual"'), ax=ax[1])
 
 
 
-![png](output_31_1.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_31_1.png)
 
 
 > Members use the bikes more or less consistently during the warm months (April through October) while casual riders peak in April (cherry blossoms!) and in summer months 
@@ -724,7 +724,7 @@ sns.lmplot(x='duration_m', y='distance', col = 'member_type', data = df.query('d
 
 
 
-![png](output_33_1.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_33_1.png)
 
 
 # Stations
@@ -858,7 +858,7 @@ sns.distplot(a=stations_use.usage, kde=False)
 
 
 
-![png](output_38_1.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_38_1.png)
 
 
 > The usage distribution is heavily left-skewed, indicating many are underutilized and few get disporportionate amount of use.
@@ -878,7 +878,7 @@ for i in range(5):
 ```
 
 
-![png](output_40_0.png)
+![png](capital_bikeshare_all_years_files/capital_bikeshare_all_years_40_0.png)
 
 
 
